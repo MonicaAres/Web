@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bitácora de Mónica</title>
+  <link rel="icon" href="IMG/logotipo%201%20color.png" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e8f5e9;
+      color: #2e7d32;
+      text-align: center;
+    }
+
+    h1, h2, h6 {
+      color: #1b5e20;
+    }
+
+    p, li, label {
+      font-size: 1.1rem;
+    }
+
+    ul, ol {
+      display: inline-block;
+      text-align: left;
+      margin: 1rem auto;
+    }
+
+    img {
+      max-width: 90%;
+      height: auto;
+      margin: 15px 0;
+      border-radius: 10px;
+    }
+
+    iframe {
+      border-radius: 10px;
+      margin: 20px auto;
+      display: block;
+      width: 90%;
+      max-width: 600px;
+    }
+
+    .cuadrado, .uno, .suscrib {
+      background-color: #ffffff;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 100, 0, 0.1);
+      width: 90%;
+      max-width: 800px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th, td {
+      border: 1px solid #a5d6a7;
+      padding: 10px;
+      background-color: #f1f8e9;
+    }
+
+    input, select {
+      padding: 10px;
+      margin: 10px 0;
+      width: 90%;
+      max-width: 400px;
+      border: 1px solid #c5e1a5;
+      border-radius: 5px;
+    }
+
+    .boton {
+      background-color: #43a047;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .boton:hover {
+      background-color: #2e7d32;
+    }
+
+    .anim h1 {
+      animation: moverTexto 2s infinite alternate;
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+
+    @keyframes moverTexto {
+      0% { transform: translateY(0); color: #1b5e20; }
+      100% { transform: translateY(-10px); color: #66bb6a; }
+    }
+
+    .mover {
+      display: inline-block;
+      margin: 0 5px;
+      font-weight: bold;
+    }
+
+    .caja {
+      background-color: #c8e6c9;
+      padding: 10px;
+      margin: 10px auto;
+      width: 80%;
+      border-radius: 5px;
+    }
+
+    .parallax {
+      background-image: url(https://static.wikia.nocookie.net/shrek/images/7/71/Shrek_logo.jpg/revision/latest?cb=20100719014955&path-prefix=es);
+      height: 200px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: repeat;
+      background-size: cover;
+      margin-top: 2rem;
+    }
+
+    .final {
+      background-color: #a5d6a7;
+      padding: 20px;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      margin: 2rem auto;
+      width: 90%;
+      max-width: 800px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bitácora de Mónica para Diseño Web</h1>
+  <h6>26 de mayo del 2025 / Monica Ares Cordova / 189511</h6>
+
+  <p>Lista no ordenada:</p>
+  <ul>
+    <li>Elemento no ordenado</li>
+    <li>Elemento no ordenado</li>
+    <li>Elemento no ordenado</li>
+  </ul>
+
+  <p>Lista ordenada:</p>
+  <ol start="3">
+    <li>Elemento ordenado</li>
+    <li>Elemento ordenado</li>
+    <li>Elemento ordenado</li>
+  </ol>
+
+  <h2>Imágenes</h2>
+  <p>Imagen local:</p>
+  <img src="img/imagen%20local.jpg"alt="Capibara local" />
+
+  <p>Imagen de internet:</p>
+  <img src="https://cdn0.expertoanimal.com/es/posts/5/8/1/cuidados_de_una_capibara_20185_orig.jpg" alt="Capibara Internet" />
+
+  <a href="https://www.diainternacionalde.com/imagenes/dias/07-10_dia-mundial-capibara-carpincho.jpg" target="_blank" class="boton">Ver imagen externa</a>
+
+  <h2>Mapa de Google</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=..." height="400"></iframe>
+
+  <h2>Video de Youtube</h2>
+  <iframe src="https://www.youtube.com/embed/FACoIA7uLVs" height="315"></iframe>
+
+  <h2>Diagrama de Flujo</h2>
+  <img src="IMG/Diagrama%20de%20Flujo.png" alt="Diagrama de flujo" />
+
+  <div class="cuadrado">
+    <p>
+      Ares es una marca que tiene un significado muy familiar: el cactus simboliza a la creadora,
+      mientras que los tres pétalos simbolizan a los tres miembros de su familia.
+    </p>
+  </div>
+
+  <div class="uno">
+    <table>
+      <thead>
+        <tr><th>Nombre</th><th>Edad</th><th>Ciudad</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Monica</td><td>23</td><td>Ciudad Juarez</td></tr>
+        <tr><td>Emilio</td><td>21</td><td>Ciudad Juarez</td></tr>
+        <tr><td>Claudia</td><td>48</td><td>Durango</td></tr>
+        <tr><td>Ricardo</td><td>54</td><td>Ciudad de México</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="suscrib">
+    <form>
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" placeholder="Escribe tu nombre..." />
+
+      <label for="apellido">Apellidos</label>
+      <input type="text" id="apellido" placeholder="Escribe tu apellido..." />
+
+      <label for="country">País</label>
+      <select id="country">
+        <option value="México">México</option>
+        <option value="Australia">Australia</option>
+        <option value="Estados Unidos">Estados Unidos</option>
+      </select>
+
+      <input type="submit" value="Enviar" class="boton" />
+    </form>
+  </div>
+
+  <div class="anim">
+    <h1>Me estoy moviendo</h1>
+  </div>
+
+  <div>
+    <span class="mover">Me he movido</span>
+    <span class="mover">Me he movido</span>
+    <span class="mover">Me he movido</span>
+  </div>
+
+  <div class="caja">Caja de texto</div>
+  <div class="caja">Caja de texto</div>
+  <div class="caja">Caja de texto</div>
+
+  <button class="boton">Pásame el mouse</button>
+
+  <div class="parallax"></div>
+
+  <div class="final">
+    La película de SHREK es estadounidense, con protagonistas animados como Shrek, Burro, Fiona,
+    Dragón y Lord Farquaad. Dirigida por Andrew Adamson y otros, se estrenó en 2001.
+  </div>
+
+</body>
+</html>
